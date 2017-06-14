@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>book List</title>
+</head>
+<body>
+	<h2>List of Users</h2>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Name</th>
+				<th>author name</th>
+				<th>Description</th>
+				<th>Price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="book : ${BOOK_LIST}">
+				<td th:text="${book.id}"></td>
+				<td th:text="${book.title}"></td>
+				<td th:text="${book.authorName}"></td>
+				<td th:text="${book.descrption}"></td>
+				<td th:text="${book.price}"></td>
+
+			</tr>
+		</tbody>
+	</table>
+
+	<a href="../users/create">Add User</a>
+	<a href="../book/addbooks">books</a>
+</body>
+</html>
