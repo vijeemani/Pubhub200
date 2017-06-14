@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Add book</title>
+</head>
+<body>
+	<h2>Add book</h2>
+	<form action="../book/books" method="get">
+		<table border="1">
+			<tbody>
+				<tr>
+					<th>name</th>
+					<td><input type="text" name="name" required="required"/></td>
+				</tr>
+				<tr>
+					<th>Author name</th>
+					<td><input type="text" name="aname" required="required" />
+					</td>
+				</tr>
+				<tr>
+					<th>description</th>
+					<td><input type="text" name="description" required="required" />
+					</td>
+				</tr>
+				<tr>
+					<th>price</th>
+					<td><input type="number" name="price" required="required" /></td>
+				</tr>
+				
+				<tr>
+					<td>
+						<button type="submit">Submit</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+	<a href="../book/booklist">list the books</a>
+</body>
+</html>
